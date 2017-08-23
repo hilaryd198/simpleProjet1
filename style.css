@@ -130,6 +130,10 @@ footer{
 	width: 100%;
 }
 
+#div-footer-images{
+	width: 10em;
+}
+
 .foot,.mes{
 	font-size: 1em;
 }
