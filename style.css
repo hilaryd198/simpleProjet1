@@ -1,0 +1,232 @@
+/*Déclaration de la plolice personnalisée*/
+@font-face{
+	font-family:'ballpark';
+	src:url('polices/ballpark.eot') format('eot'),
+		url('polices/ballpark.svg') format('svg'),
+		url('polices/ballpark.ttf') format('ttf'),
+		url('polices/ballpark.woff') format('woff');	    
+}
+
+@font-face{
+	font-family:'dayrom';
+	src:url('polices/dayrom.eot') format('eot'),
+	    url('polices/dayrom.svg') format('svg'),
+	    url('polices/dayrom.ttf') format('ttf'),
+	    url('polices/dayrom.woff') format('woff');
+}
+body{
+	background:url("images/fond_jaune.png");
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+
+#container{		
+	width: 67%;
+	height: 100%;
+	margin: auto;	
+}
+
+.separateur{
+	height: 15px;
+	width: 100%;
+	background:url("images/separateur.png") repeat-x  bottom;
+}
+
+.separateur1{
+	height: 15px;
+	width: 100%;
+	background:url("images/separateur.png") repeat-x  top;
+}
+
+header h1{
+	font-family: ballpark;
+	display: inline-block;		
+}
+
+#logo{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+header h4{
+	margin: -30px 0 0 20px;	
+}
+
+nav{
+	position: absolute;
+	right: 250px;
+	top:70px;		
+}
+
+a{
+   text-decoration: none;
+   color: #856D4D;
+   font-weight:bold;
+   margin-right: 10px;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: red;
+}
+.pont{	
+	margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    background: url('images/sanfrancisco.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+.bande_noire{
+	position: absolute;
+	bottom: 0;
+	height: 35px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.7);	
+}
+.msg{
+	position: relative;
+	color: rgb(255,255,255);
+	bottom: 5px;
+}
+article p,aside p{
+	text-align: justify;
+}
+
+.zozor{
+	margin-left: 35px;
+}
+
+aside{
+	width: 25%;
+	margin-left:20px;
+	color: rgb(255,255,255);
+	background-color: rgb(96,96,96);
+	padding: 0 15px 0 15px;
+}
+section{
+	display: inline-flex;
+}
+article{
+  width: 70%;
+}
+#fleche_bulle{	
+	position: absolute;
+    top: 235px;
+    left: 63.7%;
+}
+#rouge{
+	position: relative;
+	right: 12px;
+}
+
+footer{
+	display: inline-flex;
+	justify-content: space-between;
+	font-family: 'Trebuchet MS', Arial, sans-serif;	
+	margin-top:25px;	
+	width: 100%;
+}
+
+.foot,.mes{
+	font-size: 1em;
+}
+
+ul{
+	display: inline-block;
+	color: rgb(233,116,81);	
+}
+
+.mes{
+	margin-left: 20px;
+}
+
+.ico_top{
+	position: relative;
+	left: 40%;
+	height: 15px;
+}
+
+.foot1{
+	margin-left: -5px;
+	margin-right: 20px;
+}
+
+@media screen and (max-width:1024px){
+
+	#container{		
+		width: 100%;
+		height: 100%;
+		margin: auto;	
+	}
+
+	a{
+		display: block;
+		color: #856D4D;
+   		font-size: 0.8em;
+  		margin: 0 0 0 10px; 
+	}
+
+	header{
+		margin-top:0;
+	}
+
+	.pont{
+		display: none;
+	}
+     
+     #fleche_bulle{
+     	display: none;
+     }
+
+     section{
+     	display: block;
+     }
+
+     .zozor{
+     	float: right;
+     	width: 70px;
+     	height: 70px;
+     }
+     
+
+     nav{	
+		right: 250px;
+		top:30px;		
+	}
+
+	article{
+		width: 100%;
+		font-size: 0.8em;
+
+	}
+
+	.separateur{
+		margin-bottom: 15px;
+	}
+     
+     aside{
+     	margin: auto;
+     	width: 90%;
+     }
+
+     footer{
+     	font-size: 0.7em;
+     }
+
+     @media screen and (max-width: 480px){
+     	nav{
+     		position: absolute;
+			left: 20px;
+			top:90px;	
+			margin-top: 10px;
+     	}
+
+     	header{
+     		height: 140px;
+     	}
+     }
+
+}
